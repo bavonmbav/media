@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane id="AnchorPane" fx:id="accropane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.FormedeuxController">
+   <children>
+      <Pane layoutX="5.0" layoutY="24.0" prefHeight="374.0" prefWidth="592.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <Pane layoutX="-6.0" layoutY="-25.0" prefHeight="32.0" prefWidth="606.0" style="-fx-background-color: #38c7da;">
+               <children>
+                  <Button layoutX="12.0" layoutY="3.0" mnemonicParsing="false" onAction="#stop" style="-fx-background-color: #283151;" text="stop" textFill="#eeeeee" />
+                  <Button layoutX="68.0" layoutY="2.0" mnemonicParsing="false" onAction="#playe" style="-fx-background-color: #283151;" text="playe" textFill="WHITE" />
+                  <Button layoutX="128.0" layoutY="2.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: #283151;" text="next" textFill="WHITE" />
+                  <Button layoutX="187.0" layoutY="2.0" mnemonicParsing="false" onAction="#prec" style="-fx-background-color: #283151;" text="prec" textFill="WHITE" />
+                  <Button layoutX="243.0" layoutY="2.0" mnemonicParsing="false" onAction="#pauses" style="-fx-background-color: #283151;" text="pause" textFill="WHITE" />
+                  <Button layoutX="301.0" layoutY="2.0" mnemonicParsing="false" onAction="#repeter" style="-fx-background-color: #283151;" text="repet" textFill="WHITE" />
+                  <Slider fx:id="volume" layoutX="406.0" layoutY="11.0" onMouseDragEntered="#volumer" />
+                  <Label layoutX="364.0" layoutY="7.0" text="volume" textFill="#182e75" />
+               </children></Pane>
+            <MediaView fx:id="mediaview" fitHeight="350.0" fitWidth="600.0" layoutY="7.0" onMouseDragExited="#pauseer" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
